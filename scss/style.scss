@@ -56,47 +56,38 @@ $hover-color: #2ecc71;
 			margin-left: 0;
 		}
 	}
-}
-
-.platforms-link {
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: relative;
-	&:hover {
-		background-color: $hover-color;
-		border-radius: 50%;
+	&-link {
+		width: 100%;
+		height: 100%;
+		display: block;
+		position: relative;
+		&:hover {
+			background-color: $hover-color;
+			border-radius: 50%;
+		}
+	}
+	&-icon {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 }
 
 .apple-icon {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 21px;
 	height: 26px;
 	background: url("../img/apple-icon.png");
 }
 
 .android-icon {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 23px;
 	height: 25px;
 	background: url("../img/android-icon.png");
 }
 
 .windows-icon {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 	width: 26px;
 	height: 25px;
 	background: url("../img/windows-icon.png");
