@@ -321,3 +321,35 @@ iframe {
 	height: 25px;
 	background: url("../img/youtube-icon.png");
 }
+
+
+
+//FOOTER SECTION
+
+.footer {
+	padding: 60px 0;
+	text-align: center;
+	background-color: #e3e3e3;
+}
+
+.menu {
+	list-style-type: none;
+
+	&-item {
+		display: inline-block;
+		margin-left: 35px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&-link {
+		text-decoration: none;
+		font-family: 'texgyreheros-regular';
+		font-size: 16px;
+		line-height: 26px;
+		color: $sub-text-color;
+		&:hover {
+			color: $main-color;
+		}
+	}
+}
