@@ -7,7 +7,6 @@ $(document).ready(function(){
     slideMargin: 5,
     auto: true,
     autoHover: true,
-    pager: false,
-    controls: false
+    pager: false
   });
 });
