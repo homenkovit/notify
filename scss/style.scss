@@ -5,23 +5,35 @@ $main-color: #2ecc71;
 $main-text-color: #222222;
 $sub-text-color: #848484;
 
-.wrapper{
-	overflow-x: hidden;
+html,
+body,
+.wrapper {
+	width: 100%;
+	min-width: 1465px;
 }
 
 .container {
 	width: 1200px;
+	padding: 60px 10px;
 	margin: 0 auto;
+	&::after {
+		display: block;
+		content: '';
+		height: 0;
+		clear: both;
+		visibility: hidden;
+		font-size: 0;
+	}
 }
 
 //HEADER SECTION
 
 .header {
 	width: 100%;
-	min-width: 100%;
+	min-width: 1200px;
 	height: 600px;
 	color: white;
-	background: url("../img/header-bckg.jpg") no-repeat;
+	background: url("../img/header-bckg.jpg") center 0 no-repeat;
 	background-size: cover;
 	position: relative;
 	border-top: 10px solid $main-color;
@@ -89,19 +101,19 @@ $sub-text-color: #848484;
 .apple-icon {
 	width: 21px;
 	height: 26px;
-	background: url("../img/apple-icon.png");
+	background: url("../img/apple-icon.png") no-repeat;
 }
 
 .android-icon {
 	width: 23px;
 	height: 25px;
-	background: url("../img/android-icon.png");
+	background: url("../img/android-icon.png") no-repeat;
 }
 
 .windows-icon {
 	width: 26px;
 	height: 25px;
-	background: url("../img/windows-icon.png");
+	background: url("../img/windows-icon.png") no-repeat;
 }
 
 
@@ -109,8 +121,6 @@ $sub-text-color: #848484;
 //FEATURES SECTION
 
 .features {
-	margin: 60px 0;
-
 	&-wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -171,9 +181,9 @@ $sub-text-color: #848484;
 // NOTIFIED SECTION
 
 .notified {
-	padding: 60px 0;
+	width: 100%;
+	min-width: 1200px;
 	background-color: #e3e3e3;
-	overflow: hidden;
 
 	&-head {
 		font-family: 'Raleway-SemiBold';
@@ -227,7 +237,6 @@ $sub-text-color: #848484;
 }
 
 iframe {
-	box-sizing: border-box;
 	border: 10px solid black;
 	border-radius: 8px;
 }
@@ -237,8 +246,10 @@ iframe {
 //TESTIMONIALS SECTION
 
 .testimonials {
-	margin: 60px 0;
 	text-align: center;
+	.container {
+		padding-bottom: 0;
+	}
 
 	&-quote {
 		width: 845px;
@@ -295,7 +306,6 @@ iframe {
 // GET IN TOUCH SECTION
 
 .getintouch {
-	margin: 60px 0;
 	text-align: center;
 
 	&-head {
@@ -347,37 +357,37 @@ iframe {
 .twitter {
 	width: 17px;
 	height: 13px;
-	background: url("../img/twitter-icon.png");
+	background: url("../img/twitter-icon.png") no-repeat;
 }
 
 .facebook {
 	width: 9px;
 	height: 17px;
-	background: url("../img/facebook-icon.png");
+	background: url("../img/facebook-icon.png") no-repeat;
 }
 
 .pinterest {
 	width: 20px;
 	height: 20px;
-	background: url("../img/pinterest-icon.png");
+	background: url("../img/pinterest-icon.png") no-repeat;
 }
 
 .googleplus {
 	width: 19px;
 	height: 18px;
-	background: url("../img/googleplus-icon.png");
+	background: url("../img/googleplus-icon.png") no-repeat;
 }
 
 .linkedin {
 	width: 15px;
 	height: 15px;
-	background: url("../img/linkedin-icon.png");
+	background: url("../img/linkedin-icon.png") no-repeat;
 }
 
 .youtube {
 	width: 18px;
 	height: 25px;
-	background: url("../img/youtube-icon.png");
+	background: url("../img/youtube-icon.png") no-repeat;
 }
 
 
@@ -385,7 +395,8 @@ iframe {
 //FOOTER SECTION
 
 .footer {
-	padding: 60px 0;
+	width: 100%;
+	min-width: 1200px;
 	text-align: center;
 	background-color: #e3e3e3;
 }
