@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".testimonials-slider").bxSlider({slideWidth:50,minSlides:1,maxSlides:21,moveSlides:1,slideMargin:5,auto:!0,autoHover:!0,pager:!1,controls:!1})});

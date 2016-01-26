@@ -234,6 +234,35 @@ iframe {
 
 
 
+//TESTIMONIALS SECTION
+
+.testimonials {
+	margin: 60px 0;
+	text-align: center;
+
+	&-quote {
+		width: 845px;
+		margin: 0 auto;
+		color: $sub-text-color;
+		font-family: 'texgyreheros-italic';
+		font-size: 18px;
+		line-height: 30px;
+	}
+	&-author {
+		font-family:'Raleway-Bold';
+		font-size: 18px;
+		line-height: 20px;
+		color: #2e2e2e;
+	}
+}
+
+.bx-wrapper .bx-viewport {
+	border: 0;
+	box-shadow: 0;
+}
+
+
+
 // GET IN TOUCH SECTION
 
 .getintouch {
